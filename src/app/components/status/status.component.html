@@ -1,0 +1,57 @@
+<div class="back">
+  <div class="container flex">
+    <header>
+      <h1>Github Status <i class="fa-brands fa-github"></i></h1>
+    </header>
+
+    <div class="status-container">
+      <ng-container *ngFor="let component of components">
+        <ng-container *ngIf="component.position !== 4">
+          <div class="status flex" >
+            <div class="info flex" #info>
+              <h3 (click)="toggleDescription(info, description)">{{ component.name}}</h3>
+              <i class="fa-solid fa-circle-check" style="color: #63de6b;" id="icon"></i>
+              <p>{{ component.status }}</p>
+            </div>
+            <div class="description-div" (click)="toggleDescription(info, description)" hidden="true" #description>
+              <p class="description">{{ component.description }}</p>
+            </div>
+
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+
+    <button id="refreshBtn" (click)="getData()">Refresh Data</button>
+
+  </div>
+
+  <footer>
+    <div class="icons">
+      <a href="https://github.com/Kairuus" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/victor-muniz-236842267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
