@@ -1,3 +1,11 @@
+PROJECT INFORMATION
+
+O código em questão usa de uma API para acessar o IP do usuário, depois envia o IP para uma outra API que retorna uma saudação comum no país que se encontra o IP.
+Talvez o funcionamento da mensagem de saudação não funcione em algumas máquinas, pode ocorrer "insecure XMLHttpRequest endpoint".
+
+Em relação ao login e senha, é apenas um mock, pode-se inserir qualquer valor que não seja vazio.
+
+
 # GithubStatus
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
